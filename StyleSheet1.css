@@ -1,0 +1,154 @@
+﻿/* styles.css */
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+
+.herocontainer {
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    animation: slide 20s infinite;
+    opacity: 0;
+}
+
+.image1 {
+    background-image: url('images/layout1.jpg');
+    animation-delay: 0s;
+}
+
+.image2 {
+    background-image: url('images/layout2.jpg');
+    animation-delay: 5s;
+}
+
+.image3 {
+    background-image: url('images/storefront1.jpg');
+    animation-delay: 10s;
+}
+
+.image4 {
+    background-image: url('images/storefront2.jpg');
+    animation-delay: 15s;
+}
+
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+/* Hero Styles */
+.hero {
+    color: #BA9746;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Shop Section Styles */
+.shop {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+    .product-card img {
+        max-width: 100%;
+    }
+
+/* About Section Styles */
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
